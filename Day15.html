@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Assignment
+        //Q-1
+        rows = +prompt("enter no of rows:")
+        c = 1;
+        for (i = 1; i <= rows; i++) {
+            s = ""
+            for (j = 1; j <= i; j++) {
+                s = s + c + " "
+                c++;
+            }
+            console.log(s)
+        }
+
+        //Q-2
+        for (i = 1; i <= rows; i++) {
+            s = ""
+            for (j = 1; j <= i; j++) {
+                s += String.fromCharCode(96 + i) + " "
+            }
+            console.log(s)
+        }
+        
+        //Q-3
+        for (i = 1; i <= rows; i++) {
+            s = ""
+            for (j = 1; j <= i; j++) {
+                s += String.fromCharCode(96 + j) + " "
+            }
+            console.log(s)
+        }
+    </script>
+
+</body>
+
+</html>
